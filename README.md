@@ -1,2 +1,7 @@
+<hr>
+
 # HTML-CSS3-JS
-Web and JS
+
+<h2>Sites created by me as training</h2>
+
+<hr>
