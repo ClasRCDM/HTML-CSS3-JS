@@ -17,6 +17,6 @@
 
 ## Author
 
-- GitHub - [ClasRCDM](https://www.your-site.com)
-- Frontend Mentor - [@ClasRCDM](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@RaphaelCalixtDM](https://www.twitter.com/yourusername)
+- GitHub - [ClasRCDM](https://github.com/clasrcdm)
+- Frontend Mentor - [@ClasRCDM](https://www.frontendmentor.io/profile/clasrcdm)
+- Twitter - [@RaphaelCalixtDM](https://twitter.com/RaphaelCalixtDM)
