@@ -1,0 +1,147 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap');
+
+/* ! Regras Gerais */
+* {font-family: 'Spartan'; color: var(--txtcor1);}
+
+body, div {margin: auto; padding: 0px;}
+
+#inputs ul input {
+    border-radius: var(--thmebr);
+} 
+
+#inputs, input[type="text"] {background: var(--bckcor1); border-radius: 15px 5px;}
+
+:root {
+    /* ? Cores */
+    --bckcor0: hsl(268, 75%, 9%);
+    --bckcor1: hsl(268, 71%, 12%);
+    
+    --txtcor0: hsl(198, 20%, 13%);
+    --txtcor1: hsl(52, 100%, 62%);
+ 
+    --bttncor0: hsl(281, 89%, 26%);
+    --bttncor1: hsl(176, 100%, 44%);
+    --bttncor2: hsl(268, 47%, 21%);
+
+    /* ? Sombras */
+    --sdwnubs: 0px 2.5px 0px;
+    --sdwcor0: var(--sdwnubs) hsl(285, 91%, 52%);
+    --sdwcor1: var(--sdwnubs) hsl(177, 92%, 70%);
+    --sdwcor2: var(--sdwnubs) hsl(290, 70%, 36%);
+
+    /* ? Border-Radius */
+    --thmebr: 5px 4px;
+    --bttnbr: 15px;
+
+    /* ? outhers */
+}
+
+/*-------------------*/
+
+/* * Static         */
+   /* TODO Box-level */
+   body {background: whitesmoke;}
+   
+   header {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       align-items: center;
+   }
+
+   header ul {display: flex; list-style: none;}
+   header li {margin-left: 10px;}
+
+   main ul {padding: 0px;}
+
+   footer {
+       background: black; 
+       margin-top: 10px; padding: 10px;
+       bottom: 0;
+       left: 0;
+       position: fixed;
+       width: 100%
+    }
+
+  /* TODO Inline-level */
+  main input {
+      border-style: none; 
+      font-size: clamp(0.5em, 1em + 1vw, 2.5em);
+    }
+
+  #down input {
+    display: inline-block;
+    width: 40%;
+    padding-top: 6px; margin-top: 4px; margin-right: 10px;
+  }
+
+  input[type="text"] {
+      text-align: end;
+      width: 50%;
+      border-style: none;
+      padding-bottom: 30px; padding-top: 20px; padding-right: 25px;
+      background: var(--bckcor0);
+      box-shadow: var(--sdwcor1);
+  }
+
+/*-------------------*/
+
+/* * Animat         */
+  
+   /* TODO Box-level */
+  /* TODO Inline-level */
+  #inputs input:active {
+      transform: translateY(3px);
+      transition: .3s;
+      box-shadow: none;
+  }
+
+/*-------------------*/
+
+/* ! Class */
+
+.keynunbers, .keydel {
+    width: 18%;
+    padding-top: 6px; margin-inline: 7px;
+}
+
+.keynunbers {
+    background: var(--bttncor2);
+    box-shadow: var(--sdwcor2);
+}
+
+.keydel, .result {font-size: 18px;}
+
+.keydel {
+    background: var(--bttncor0);
+    box-shadow: var(--sdwcor0);
+}
+
+.result {
+    background: var(--bttncor1);
+    box-shadow: var(--sdwcor1);
+    color: black; 
+}
+
+/*-------------------*/
+
+/* ! IDs */
+#calculadora {
+    background: var(--bckcor0);
+    padding: 20px;
+    margin-top: 50px;
+    max-width: 480px;
+    border-radius: 5px;
+}
+
+#inputs {
+    text-align: center;
+    padding: 5px;
+}
+/*-------------------*/
+
+/* ! MEDIA */
+/* @media (max-width: 375px) {
+    #calculadora {width: 375px;}
+} */
