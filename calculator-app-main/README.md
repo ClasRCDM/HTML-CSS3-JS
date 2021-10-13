@@ -6,17 +6,24 @@
 
 - - Challenge proposed by [Frontend Mentor](https://www.frontendmentor.io)
 
-
 ## My process
 
 - ### Built with
 
-- - Semantic HTML5 markup
-- - CSS custom properties
-- - Mobile-first workflow
-
+* ```html
+    <!DOCTYPE html>
+    ```
+* ```html
+    <link rel="stylesheet" href="style.css">
+    ```
+* ```html
+    <script src="script.js"></script>
+    ```
+    
 ## Author
 
-- GitHub - [ClasRCDM](https://github.com/clasrcdm)
-- Frontend Mentor - [@ClasRCDM](https://www.frontendmentor.io/profile/clasrcdm)
-- Twitter - [@RaphaelCalixtDM](https://twitter.com/RaphaelCalixtDM)
+Web     | Name
+------  | :------:
+GitHub  | [ClasRCDM](https://github.com/clasrcdm)
+Frontend Mentor | [@ClasRCDM](https://www.frontendmentor.io/profile/clasrcdm)
+Twitter | [@RaphaelCalixtDM](https://twitter.com/RaphaelCalixtDM)
