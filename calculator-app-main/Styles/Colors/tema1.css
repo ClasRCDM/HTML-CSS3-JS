@@ -1,0 +1,22 @@
+:root {
+    /* ? Cores */
+    --bckcor0: hsl(268, 75%, 9%);
+    --bckcor1: hsl(268, 71%, 12%);
+    
+    --txtcor0: hsl(198, 20%, 13%);
+    --txtcor1: hsl(52, 100%, 62%);
+ 
+    --bttncor0: hsl(281, 89%, 26%);
+    --bttncor1: hsl(176, 100%, 44%);
+    --bttncor2: hsl(268, 47%, 21%);
+
+    /* ? Sombras */
+    --sdwnubs: 0px 2.5px 0px;
+    --sdwcor0: var(--sdwnubs) hsl(285, 91%, 52%);
+    --sdwcor1: var(--sdwnubs) hsl(177, 92%, 70%);
+    --sdwcor2: var(--sdwnubs) hsl(290, 70%, 36%);
+
+    /* ? Border-Radius */
+    --thmebr: 5px 4px;
+    --bttnbr: 15px;
+}

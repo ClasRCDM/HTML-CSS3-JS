@@ -5,59 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Calculator app</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Styles/style.css">
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body onload="temas(), tema1()">
 
   <div id="calculadora">
     <header>
-      <h1>calc</h1>
-      <p>
-        theme
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-        </ul>
-      </p>
+      <div class="toggle">
+        <h2>Calc</h2>
+        <div class="num">
+          <p id="um" onclick="tema1()">1</p>
+          <p id="dois" onclick="tema2()">2</p>
+          <p id="tres" onclick="tema3()">3</p>
+        </div>
+      </div>
+      <div class="control">
+				<p>Theme</p>
+				<div class="box">
+					<div id="circle"></div>
+				</div>
+			</div>
     </header>
 
+    <div class="tela">
+      <form name="calc">
+        <input type="text" name="vels" readonly id="vels">
+      </form>
+    </div>
+
     <main id="inputs">
-      <ul>
-        <input type="text" name="vels" id="vels">
-      </ul>
-      <ul>
-        <input class="keynunbers" type="button" value="7">
-        <input class="keynunbers" type="button" value="8">
-        <input class="keynunbers" type="button" value="9">
-        <input class="keydel" type="button" value="DEl" onclick="deletar()">
-      </ul>
-      <ul>
-        <input class="keynunbers" type="button" value="4">
-        <input class="keynunbers" type="button" value="5">
-        <input class="keynunbers" type="button" value="6">
-        <input class="keynunbers" type="button" value="+">
-      </ul>
-      <ul>
-        <input class="keynunbers" type="button" value="1">
-        <input class="keynunbers" type="button" value="2">
-        <input class="keynunbers" type="button" value="3">
-        <input class="keynunbers" type="button" value="-">
-      </ul>
-      <ul>
-        <input class="keynunbers" type="button" value=".">
-        <input class="keynunbers" type="button" value="0">
-        <input class="keynunbers" type="button" value="/">
-        <input class="keynunbers" type="button" value="x">
-      </ul>
-      <ul id="down">
-        <input class="keydel" type="reset" value="RESET" onclick="reset()">
-        <input class="result" type="button" value="=" onclick="calculadora()">
-      </ul>
+      <input class="keynunbers" type="button" value="7" onclick="document.calc.vels.value +='7'">
+      <input class="keynunbers" type="button" value="8" onclick="document.calc.vels.value +='8'">
+      <input class="keynunbers" type="button" value="9" onclick="document.calc.vels.value +='9'">
+      <input class="keydel" type="button" value="DEl" onclick="deletar()">
+      <input class="keynunbers" type="button" value="4" onclick="document.calc.vels.value +='3'">
+      <input class="keynunbers" type="button" value="5" onclick="document.calc.vels.value +='5'">
+      <input class="keynunbers" type="button" value="6" onclick="document.calc.vels.value +='6'">
+      <input class="keynunbers" type="button" value="+" onclick="document.calc.vels.value +='+'">
+      <input class="keynunbers" type="button" value="1" onclick="document.calc.vels.value +='1'">
+      <input class="keynunbers" type="button" value="2" onclick="document.calc.vels.value +='2'">
+      <input class="keynunbers" type="button" value="3" onclick="document.calc.vels.value +='3'">
+      <input class="keynunbers" type="button" value="-" onclick="document.calc.vels.value +='-'">
+      <input class="keynunbers" type="button" value="." onclick="document.calc.vels.value +='.'">
+      <input class="keynunbers" type="button" value="0" onclick="document.calc.vels.value +='0'">
+      <input class="keynunbers" type="button" value="/" onclick="document.calc.vels.value +='/'">
+      <input class="keynunbers" type="button" value="x" onclick="document.calc.vels.value +='*'">
+      <input class="keyreset" type="reset" value="RESET" onclick="reset()">
+      <input class="result" type="button" value="=" onclick="calculadora()">
     </main>
   </div>
 
