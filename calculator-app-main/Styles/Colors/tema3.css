@@ -12,7 +12,7 @@
 
     /* ? Sombras */
     --sdwnubs: 0px 2.5px 0px;
-    --sdwcor0: var(--sdwnubs) hsl(285, 91%, 52%);
+    --sdwcor0: var(--sdwnubs) hsl(285, 64%, 48%);
     --sdwcor1: var(--sdwnubs) hsl(6, 70%, 34%);
     --sdwcor2: var(--sdwnubs) hsl(28, 16%, 65%);
 
